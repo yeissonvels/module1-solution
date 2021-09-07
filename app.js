@@ -21,9 +21,7 @@ function LunchCheckController($scope) {
             $scope.customClass = "green";
             $scope.customForm = "right-form";
             var dishes = $scope.checkEmptyItems($scope.dishes.split(','));
-            alert(dishes);
             var totalDishes = dishes.length;
-            alert(totalDishes);
             if (totalDishes > 0 && totalDishes <= 3) {
                 $scope.message = "Enjoy!";
             } else {
